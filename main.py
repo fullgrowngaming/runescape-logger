@@ -5,6 +5,7 @@ import datetime
 
 #version 2.0
 
+#not even remotely done implementing this class yet
 class Player:
     def __init__(self, player_name, date, stats):
         self.player_name = player_name
@@ -69,8 +70,7 @@ if __name__ == "__main__":
     username = input("Enter your username: ")
     filename = username + '_log.json'
     date = datetime.datetime.now().strftime("%y-%m-%d-%H-%M")
-
-    #player = Player(username, date, create_entry(username, date))
+    
     update_list(filename, username, date)
 
 
